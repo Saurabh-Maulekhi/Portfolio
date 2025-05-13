@@ -112,9 +112,10 @@
 
 
 <!--    Profile-->
+    {% load static%}
     <section id="home" class="min-h-screen flex items-center justify-center bg-gray-900 bg-opacity-80 py-20 px-4" style="background-blend-mode: overlay; background-size: cover; background-position: center;">
         <div class="container mx-auto text-center">
-            <img src="static/saurabh_profile_image.png" class="w-64 h-64 md:w-64 md:h-64 mx-auto rounded-full shadow-2xl mb-2 border-4 border-blue-500">
+            <img src="{% static "saurabh_profile_image.png" %}" class="w-64 h-64 md:w-64 md:h-64 mx-auto rounded-full shadow-2xl mb-2 border-4 border-blue-500">
             <h1 class="text-5xl md:text-7xl font-bold text-white fade-in-text">
                 Hello, I'm <span class="text-blue-400">Saurabh Maulekhi</span>
             </h1>
