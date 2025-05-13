@@ -4,7 +4,7 @@
     "use" : "@vercel/python",
   },
   {
-    "src": "staticfiles/**",
+    "src": "static/**",
     "use": "@vercel/static"
   }
   ],
@@ -12,7 +12,7 @@
   "routes": [
     {
       "src": "/static/(.)",
-      "dest": "/staticfiles/$1"
+      "dest": "/static/$1"
     },
     {
       "src": "/(.*)",
